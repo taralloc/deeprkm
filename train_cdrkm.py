@@ -352,8 +352,6 @@ if __name__ == '__main__':
 
     # Save Model ======================================================================================
     torch.save({'cdrkm_state_dict': cdrkm.state_dict(),
-                # 'optimizer': optimizer.state_dict(),
-                # 'optimizer2': optimizer2.state_dict(),
                 'args': args,
                 'train_table': train_table.to_json(orient='records'),
                 'train_table_datatypes': json.dumps(train_table.dtypes.apply(lambda x: x.name).to_dict()),
