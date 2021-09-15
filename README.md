@@ -28,7 +28,7 @@ Any PyTorch dataset can be used by adding it to `utils.py`. Procedural datasets 
 
 Activate the conda environment with the command `conda activate rkm_env` and run one of the following commands, for example:
 ```bash
-python train_cdrkm.py --dataset mnist -N 100 --train_algo O --maxiterations 3000 --maxouteriterations 10
+python train_cdrkm.py --dataset mnist -N 100 --train_algo 0 --maxiterations 3000 --maxouteriterations 10
 ```
 for training with Quadratic Penalty on a subset of 100 images from MNIST for maximum 3000 inner iterations and maximum 10 outer iterations, or
 
